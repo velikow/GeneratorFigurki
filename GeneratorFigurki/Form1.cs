@@ -1,7 +1,25 @@
+using System.Drawing;
+using System.Drawing.Text;
+using System.Reflection;
+using System.Security.Policy;
+using System.Threading;
+
 namespace GeneratorFigurki
 {
     public partial class Form1 : Form
     {
+        private static readonly Random random = new Random();
+        private bool isSquareGenerated;
+        private bool isTriangleGenerated;
+        private bool isCircleGenerated;
+        Thread squareThread;
+        Thread triangleThread;
+        Thread circleThread;
+        Graphics g;
+        int panelY;
+        int panelX;
+        int panelYDiff;
+        int panelXDiff;
         public Form1()
         {
             InitializeComponent();
