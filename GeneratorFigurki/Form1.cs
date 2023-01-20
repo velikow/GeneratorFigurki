@@ -25,6 +25,15 @@ namespace GeneratorFigurki
             InitializeComponent();
         }
 
+        private void GetValues()
+        {
+            g = CreateGraphics();
+            panelY = random.Next(0, Height);
+            panelX = random.Next(0, Width);
+            panelYDiff = Height - panelY;
+            panelXDiff = Width - panelX;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
