@@ -42,7 +42,7 @@
             this.squareBtn.TabIndex = 0;
             this.squareBtn.Text = "SQUARE";
             this.squareBtn.UseVisualStyleBackColor = true;
-            this.squareBtn.Click += new System.EventHandler(this.button1_Click);
+            this.squareBtn.Click += new System.EventHandler(this.squareBtn_Click);
             // 
             // triangleBtn
             // 
@@ -52,6 +52,7 @@
             this.triangleBtn.TabIndex = 1;
             this.triangleBtn.Text = "TRIANGLE";
             this.triangleBtn.UseVisualStyleBackColor = true;
+            this.triangleBtn.Click += new System.EventHandler(this.triangleBtn_Click);
             // 
             // circleBtn
             // 

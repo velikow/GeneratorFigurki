@@ -20,6 +20,7 @@ namespace GeneratorFigurki
         int panelX;
         int panelYDiff;
         int panelXDiff;
+
         public Form1()
         {
             InitializeComponent();
@@ -44,9 +45,14 @@ namespace GeneratorFigurki
         {
             while (isSquareGenerated)
             {
-                GenerateSquare();
+                
                 Thread.Sleep(100);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
