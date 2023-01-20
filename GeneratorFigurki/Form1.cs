@@ -34,9 +34,19 @@ namespace GeneratorFigurki
             panelXDiff = Width - panelX;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void squareBtn_Click(object sender, EventArgs e)
         {
-
+            squareThread = new Thread(SquareThread);
+            isSquareGenerated = true;
+            squareThread.Start();
+        }
+        private void SquareThread()
+        {
+            while (isSquareGenerated)
+            {
+                GenerateSquare();
+                Thread.Sleep(100);
+            }
         }
     }
 }
