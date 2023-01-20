@@ -62,6 +62,7 @@
             this.circleBtn.TabIndex = 2;
             this.circleBtn.Text = "CIRCLE";
             this.circleBtn.UseVisualStyleBackColor = true;
+            this.circleBtn.Click += new System.EventHandler(this.circleBtn_Click);
             // 
             // stopGeneratingBtn
             // 
