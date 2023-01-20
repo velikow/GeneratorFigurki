@@ -72,6 +72,7 @@
             this.stopGeneratingBtn.TabIndex = 3;
             this.stopGeneratingBtn.Text = "Stop generator";
             this.stopGeneratingBtn.UseVisualStyleBackColor = true;
+            this.stopGeneratingBtn.Click += new System.EventHandler(this.stopGeneratingBtn_Click);
             // 
             // Form1
             // 
